@@ -1,0 +1,35 @@
+{
+    "name": "Cave Game Tracker",
+    "description": "Track your steps in Wolf Game's Cave Game",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage", "activeTab", "scripting","tabs"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "default_icon": {
+        "16": "/images/Cracked16.png",
+        "32": "/images/Cracked32.png",
+        "48": "/images/Cracked48.png",
+        "64": "/images/Cracked64.png"
+    },
+    "icons": {
+        "16": "/images/Cracked16.png",
+        "32": "/images/Cracked32.png",
+        "48": "/images/Cracked48.png",
+        "64": "/images/Cracked64.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.wolf.game/*"],
+            "js": ["content.js", "p5.js"]
+        }
+    ],
+    "externally_connectable": {
+        "matches": ["*://*.wolf.game/*"]
+    },
+    "web_accessible_resources": [{
+        "resources": ["images/Wolf#16.png"],
+        "matches": ["<all_urls>"]
+      }]
+  }

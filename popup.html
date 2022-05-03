@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <script src="p5.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div id="header">Cave Game Tracker</div>
+    </nav>
+    <section>
+      <div id="infoWrapper">
+        <div id="infoBar">
+          <div id="data" class="infoItem">
+            <img src="images/page.svg" id="dataButton"></img>
+          </div>
+          <div id="coordinatesHeader" class="infoItem">Select an animal</div>
+          <div id="nft" class="infoItem">
+            <div id="nftId"></div>
+            <div id="iconDiv">
+              <svg id="mySvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mapWrapper">
+        <div id="mapDisplay">
+          <div id="coordinatesWrapper">
+            <div id="exportButton"><img src="images/downloadBlack.svg" id="download" class="imageOn"><img src="images/download.svg" id="download" class="imageOff"></div>
+            <p id="coordinateList"></p>
+          </div>
+          <div id="drawingWindow"></div>
+        </div>
+      </div>
+    </section> 
+    <script src="popup.js"></script>
+  </body>
+</html>
