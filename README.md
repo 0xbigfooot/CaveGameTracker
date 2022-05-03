@@ -1,21 +1,21 @@
 # CaveGameTracker
 Cave Game Tracker tracks your coordinates and generates a map of recent moves while you are playing Wolf Game's Cave Game.
 
-![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/MapView.png | width=100)
-![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png | width=100)
+<img src="https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/MapView.png" width="100" height="100">
+![Coordinates View](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png | width=100)
 
 
 Installation:
 -------------
 1. Click the green "Code" button at the top of the page.
 
-![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/GreenCode.png)
+![Download Button](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/GreenCode.png)
 
 2. Click "Download ZIP"
 3. Decompress the ZIP file. Remember the directory that you save it to.
 4. Open chrome://extensions in your Chrome browser (also works in Brave).
 
-![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/ExtensionsHome.png)
+![ExtensionsHomePage](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/ExtensionsHome.png)
 
 5. Switch "Developer Mode" on in the top left corner of the browser.
 6. Click "Load Unpacked" in the top left corner.
