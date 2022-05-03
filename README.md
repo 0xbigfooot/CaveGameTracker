@@ -1,8 +1,8 @@
 # CaveGameTracker
 Cave Game Tracker tracks your coordinates and generates a map of recent moves while you are playing Wolf Game's Cave Game.
 
-![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/MapView.png)
-![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png)
+![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/MapView.png | width=100)
+![alt text](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png | width=100)
 
 
 Installation:
