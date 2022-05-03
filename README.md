@@ -15,7 +15,7 @@ Installation:
 ![Download Button](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/GreenCode.png)
 
 2. Click "Download ZIP"
-3. Decompress the ZIP file. Remember the directory that you save it to.
+3. Decompress the ZIP file by double clicking it. Remember the directory that you save it to.
 4. Open chrome://extensions in your Chrome browser (also works in Brave).
 
 ![ExtensionsHomePage](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/ExtensionsHome.png)
