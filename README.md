@@ -20,7 +20,7 @@ Installation:
 
 ![ExtensionsHomePage](https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/ExtensionsHome.png)
 
-5. Switch to "Developer Mode" on in the top left corner of the browser.
+5. Turn the "Developer Mode" switch on in the top right corner of the browser.
 6. Click "Load Unpacked" in the top left corner.
 7. Select the folder that you just decompressed. (Named "CaveGameTracker-main" by default.)
 8. Success! You can now access the extension from the puzzle piece in the top right of your browser. You can pin the extension for easy access while playing Cave Game.
