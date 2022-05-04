@@ -27,9 +27,5 @@
     ],
     "externally_connectable": {
         "matches": ["*://*.wolf.game/*"]
-    },
-    "web_accessible_resources": [{
-        "resources": ["images/Wolf#16.png"],
-        "matches": ["<all_urls>"]
-      }]
+    }
   }
