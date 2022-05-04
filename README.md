@@ -1,6 +1,8 @@
 # CaveGameTracker
 Cave Game Tracker tracks your coordinates and generates a map of recent moves while playing Wolf Game's Cave Game.
 
+Your path will show up green if you walked on coordinates you haven't walked on before, yellow if you've already stepped on those coordinates once, and red if you've stepped on those coordinates more than once.
+
 <p float="center">
 <img src="https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/MapView.png" width="400" height="600">
 <img src="https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png" width="400" height="600">
