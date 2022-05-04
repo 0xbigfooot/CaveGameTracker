@@ -6,7 +6,7 @@ Cave Game Tracker tracks your coordinates and generates a map of recent moves wh
 <img src="https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png" width="400" height="600">
  </p>
  
- Switch between map view and coordinates view by clicking on the Page button in the top left corner.
+ Switch between Map View and Coordinates View by clicking on the Page button in the top left corner.
  
  Cave Game Tracker also allows you to export your coordinates in CSV form by clicking the download button on the coordinates view window. 
 
