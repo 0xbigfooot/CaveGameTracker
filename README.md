@@ -37,7 +37,7 @@ Cave Game Tracker saves your coordinates to your browser's local storage. If you
 
 Cave Game Tracker collects certain data and sends it to a database. 
 
-What kind of data? It sends your wolf/sheep's id, your wolf/sheep's pack, and your coordinates array. 
+What kind of data? It sends your wolf/sheep's id, your wolf/sheep's pack, and your wolf/sheep's coordinates array. 
 
 This data is only accessible to those actively developing Cave Game Tracker. Cave Game Tracker does not collect any sensitive/personal data, only the data listed above.
 
