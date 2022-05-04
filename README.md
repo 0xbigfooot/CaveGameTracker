@@ -27,7 +27,8 @@ Installation
 5. Turn the "Developer Mode" switch on in the top right corner of the browser.
 6. Click "Load Unpacked" in the top left corner.
 7. Select the folder that you just decompressed. (Named "CaveGameTracker-main" by default.)
-8. Success! You can now access the extension from the puzzle piece in the top right of your browser. You can pin the extension for easy access while playing Cave Game.
+8. After you've installed, make sure you refresh your Wolf.Game if you have an active game running.
+9. Success! You can now access the extension from the puzzle piece in the top right of your browser. You can pin the extension for easy access while playing Cave Game.
 
 Cave Game Tracker is currently undergoing review by the Chrome Web Store to become an official Chrome Extension.
 
