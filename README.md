@@ -10,9 +10,7 @@ Your path will show up green if you walked on coordinates you haven't walked on 
  
  Switch between Map View and Coordinates View by clicking on the Page button in the top left corner.
  
- Cave Game Tracker also allows you to export your coordinates in CSV form by clicking the download button on the coordinates view window. 
-
-
+ Cave Game Tracker also allows you to export your coordinates to CSV form by clicking the download button on the coordinates view window. 
 
 Installation
 -------------
@@ -31,8 +29,11 @@ Installation
 7. Select the folder that you just decompressed. (Named "CaveGameTracker-main" by default.)
 8. Success! You can now access the extension from the puzzle piece in the top right of your browser. You can pin the extension for easy access while playing Cave Game.
 
+Cave Game Tracker is currently undergoing review by the Chrome Web Store to become an official Chrome Extension.
+
 Data
 ----
+Cave Game Tracker saves your coordinates to your browser's local storage. If you reinstall the extension, your coordinates will be deleted. Please export your coordinates as a CSV before reinstalling the extension if you want access to your previous coordinates. Once Cave Game Tracker becomes an official Chrome Extenision, your data will remain safe during software updates. 
 
 Cave Game Tracker collects certain data and sends it to a database. 
 
