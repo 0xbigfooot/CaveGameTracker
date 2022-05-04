@@ -1,4 +1,4 @@
-//Injected js
+// Injected js
 
 chrome.runtime.sendMessage({
     from: 'content',
@@ -6,13 +6,13 @@ chrome.runtime.sendMessage({
 });
 
 chrome.runtime.onMessage.addListener((msg, sender, response) => {
-    //Receive message from popup
+    // Receive message from popup
     if ((msg.from === 'popup') && (msg.subject === 'DOMInfo')) {
       
         // Collect the necessary data. 
         var woolfData = document.getElementsByClassName('flex flex-col items-center flex-shrink-0 mx-2 px-2 py-1 my-1 cursor-pointer border-4 border-red');
         var woolfImg = woolfData[0].childNodes[1].childNodes[0].src;
-         var domInfo = {
+        var domInfo = {
         id: woolfData[0].childNodes[0].childNodes[1].data,
         imgSrc: woolfImg
 
@@ -24,6 +24,7 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
     }
 });
 
+// Object for holding woolfId, pack, and coordinates array.
 class Woolf {
     constructor(id, pack) {
         this.id = id;
@@ -36,18 +37,18 @@ class Woolf {
     }
 }
 
-//MutationObserver setup.
+// MutationObserver setup.
 let options = {
     characterData: true
 }
 
 let observer = new MutationObserver(mCallBack);
 
-//Observes changes in the coordinates div.
+// Observes changes in the coordinates div.
 function mCallBack(mutations) {
     for (let mutation of mutations) {
         if (mutation.type === 'characterData') {
-            //Grabs woolf data
+            // Gets woolf data.
             var woolfData = document.getElementsByClassName('flex flex-col items-center flex-shrink-0 mx-2 px-2 py-1 my-1 cursor-pointer border-4 border-red');
             var woolfId = woolfData[0].childNodes[0].childNodes[1].data;
             var woolfPack = woolfData[0].childNodes[2].childNodes[2].data;
@@ -55,13 +56,13 @@ function mCallBack(mutations) {
             var newCoords = coordinatesDiv[0].childNodes[1].data;
             var liveCoords = liveCoordsConverter(newCoords)
 
-            //Packs data into a woolf class and adds coordinates.
+            // Packs data into a woolf class and adds coordinates.
             if (newCoords == "(0, 0)") { 
                 break; 
             }
             else {
                 chrome.storage.local.get([woolfId], function(response) {
-                    //Checks if woolfId exists in storage.
+                    //Checks if woolfId exists in local storage.
                     if(Object.keys(response).length !== 0) {
                         let currentCoords = response[woolfId].coordinates[response[woolfId].coordinates.length - 1];
                         let currentCoordsArray = response[woolfId].coordinates;
@@ -74,12 +75,12 @@ function mCallBack(mutations) {
                             chrome.storage.local.set({ [woolfId] : response[woolfId]}, function() {
                             })
 
+                            // Updates coordinates in the database.
                             const Http = new XMLHttpRequest();
                             const url='https://cave-game-tracker.glitch.me/woolfs';
 
                             Http.open("PATCH", url);
                             Http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
                             const httpWoolf  = {
                                 "woolfId" : woolfId,
                                 "pack" : woolfPack,
@@ -91,23 +92,23 @@ function mCallBack(mutations) {
                         }                  
                     }
                     else {         
-                        //Initializes current woolf data.
+                        // Initializes current woolf data.
                         var woolf = new Woolf(woolfId, woolfPack);
                         woolf.add(liveCoords);
                         chrome.storage.local.set({ [woolfId] : woolf }, function() {
                         }); 
 
+                        // Adds a new woolf to the database.
                         const Http = new XMLHttpRequest();
                         const url='https://cave-game-tracker.glitch.me/woolfs';
 
                         Http.open("POST", url);
                         Http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
                         const httpWoolf  = {
                             "woolfId" : woolfId,
                             "pack" : woolfPack,
                             "coordinates" :
-                                liveCoords
+                                [liveCoords]
                         }
 
                         Http.send(JSON.stringify(httpWoolf));
