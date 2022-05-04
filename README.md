@@ -6,7 +6,7 @@ Cave Game Tracker tracks your coordinates and generates a map of recent moves wh
 <img src="https://github.com/0xbigfooot/CaveGameTracker/blob/main/images/CoordinatesView.png" width="400" height="600">
  </p>
  
-Your path will show up green if you walked on coordinates you haven't walked on before, yellow if you've already stepped on those coordinates once, and red if you've stepped on those coordinates more than once.
+Your path will show up green if you walked on coordinates you haven't walked on before, yellow if you've stepped on those coordinates once before, and red if you've stepped on those coordinates more than once before.
  
  Switch between Map View and Coordinates View by clicking on the Page button in the top left corner.
  
