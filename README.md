@@ -8,7 +8,7 @@ Cave Game Tracker tracks your coordinates and generates a map of recent moves wh
 
 
 
-Installation:
+Installation
 -------------
 1. Click the green "Code" button at the top of the page.
 
