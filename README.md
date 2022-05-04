@@ -10,7 +10,7 @@ Your path will show up green if you walked on coordinates you haven't walked on 
  
  Switch between Map View and Coordinates View by clicking on the Page button in the top left corner.
  
- Cave Game Tracker also allows you to export your coordinates to CSV form by clicking the download button on the coordinates view window. 
+ Cave Game Tracker also allows you to export your coordinates to CSV form by clicking the Download button on the coordinates view window. 
 
 Installation
 -------------
