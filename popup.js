@@ -15,7 +15,6 @@ const setDOMInfo = info => {
   chrome.storage.local.get([nftId], function(res) {
     // Gets nftId's data from local storage and assigns it to the nftGetter object. 
     Object.assign(nftGetter, res[nftId]);
-    console.log(nftGetter.coordinates)
 
     // Instead of going from the center of the map to the boundary, we want to go
     // from the boundary of the map to the center.
@@ -136,7 +135,6 @@ function originFinder(directions) {
     var boundsChecker = [origin , origin];
     for (var dir in directions) {
         if (!outOfBounds) {
-            console.log(boundsChecker)
             if (directions[dir] == 'Up') {
               if((boundsChecker[1] - 1) < 0) {
                   outOfBounds = true;
