@@ -28,9 +28,9 @@ Installation
 Data
 ----
 
-Cave Game Tracker sends your data to a database. 
+Cave Game Tracker collects certain data and sends it to a database. 
 
-Which data? It sends your wolf/sheep's id, your wolf/sheep's pack, and your coordinates array. 
+What kind of data? It sends your wolf/sheep's id, your wolf/sheep's pack, and your coordinates array. 
 
 This data is only accessible to those actively developing Cave Game Tracker. Cave Game Tracker does not collect any sensitive/personal data, only the data listed above.
 
