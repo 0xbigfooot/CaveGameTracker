@@ -25,7 +25,10 @@ Installation
 7. Select the folder that you just decompressed. (Named "CaveGameTracker-main" by default.)
 8. Success! You can now access the extension from the puzzle piece in the top right of your browser. You can pin the extension for easy access while playing Cave Game.
 
-Note: Cave Game Tracker sends your data to a database. 
+Data
+----
+
+Cave Game Tracker sends your data to a database. 
 
 Which data? It sends your wolf/sheep's id, your wolf/sheep's pack, and your coordinates array. 
 
