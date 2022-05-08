@@ -32,6 +32,10 @@ Installation
 
 Cave Game Tracker is currently undergoing review by the Chrome Web Store to become an official Chrome Extension.
 
+Note
+----
+Refresh your web page once you sign the transaction for your Cave Game session! Currently fixing this to make it work without refreshing.
+
 Data
 ----
 Cave Game Tracker saves your coordinates to your browser's local storage. If you reinstall the extension, your coordinates will be deleted. Please export your coordinates as a CSV before reinstalling the extension if you want access to your previous coordinates. Once Cave Game Tracker becomes an official Chrome Extenision, your data will remain safe during software updates. 
